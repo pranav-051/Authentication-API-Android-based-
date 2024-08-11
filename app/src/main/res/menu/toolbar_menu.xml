@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="Camera"
+        android:id="@+id/camera"
+        android:icon="@drawable/ic_referesh"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:title="Search"
+        android:id="@+id/group"/>
+
+    <item
+        android:title="New broadcast"
+        android:id="@+id/broadcast"/>
+
+    <item
+        android:title="Linked devices"
+        android:id="@+id/linked"/>
+
+    <item
+        android:title="Settings"
+        android:id="@+id/settings"/>
+
+</menu>

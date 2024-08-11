@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="760dp"
+    tools:context=".welcome_page"
+    android:background="@color/light_gray"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="690dp"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        android:background="@color/white">
+
+        <ViewFlipper
+            android:layout_width="match_parent"
+            android:id="@+id/ScrollingImages"
+            android:layout_height="440dp"
+            android:autoStart="true"
+            android:flipInterval="3000"
+            android:inAnimation="@android:anim/slide_in_left"
+            android:outAnimation="@android:anim/slide_out_right">
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_marginTop="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/img1" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView2"
+                app:srcCompat="@drawable/img2"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView3"
+                app:srcCompat="@drawable/img3"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView4"
+                app:srcCompat="@drawable/img4"/>
+        </ViewFlipper>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_login"
+            android:text="Login Now"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/border"
+            android:textColor="@color/orange1"
+            android:layout_below="@id/ScrollingImages"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:padding="12dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_register"
+            android:text="Register Now"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="35dp"
+            android:layout_below="@id/button_login"
+            android:layout_marginRight="35dp"
+            android:layout_marginLeft="35dp"
+            android:textColor="@color/orange1"
+            android:padding="12dp"
+            android:background="@drawable/border"/>
+
+
+    </RelativeLayout>
+</RelativeLayout>
